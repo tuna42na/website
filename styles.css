@@ -6,8 +6,10 @@
   
   
 .main {
-    background-image: url(https://i.etsystatic.com/13460861/r/il/c428d0/2429904793/il_1588xN.2429904793_pkk1.jpg);
-    background-size: cover;
+    background-image: url('./images/rocks\ copy.png');
+    background-size: 45%;
+    background-color: oldlace;
+    background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -49,7 +51,7 @@
   }
   
   .outbound-links-container > div:hover{
-    background-color: rgb(255,255,255, 0.5);
+    background-color: rgb(255,255,255, 0.8);
   }
   
   .outbound-links-container > div > a >  img {
@@ -61,8 +63,8 @@
   
   div .outbound-links-container {
     
-    background-color: rgba(255, 253, 253, 0.2);
-    border-radius: 10px;
+    background-color: rgba(255, 253, 253, 0.6);
+    border-radius: 20px;
   }
   
   #tunalogo {
@@ -77,38 +79,21 @@
     z-index: 3;
     width: 100px; 
     text-align: center;
+    transition: border-bottom-right-radius 1.5s,border-bottom-left-radius 1.5s,border-top-right-radius 1.5s,border-top-left-radius 1.5s;
   }
   
   #Code:hover ~ img#tunalogo{
-    animation: code 2s 1;
-  }
-  @keyframes code{
-   0%{border-top-left-radius:50%}
-   75%{border-top-left-radius:15%}
-   100%{border-top-left-radius:50%}
+    border-top-left-radius: 15%; 
   }
   
   #Music:hover ~ img#tunalogo{
-    animation: music 2s 1;
+    border-top-right-radius: 15%; 
   }
-  @keyframes music{
-   0%{border-top-right-radius:50%}
-   75%{border-top-right-radius:15%}
-   100%{border-top-right-radius:50%}
-  }
-  
+ 
   #Codepen:hover ~ img#tunalogo{
-    animation: codepen 2s 1;
+    border-bottom-left-radius: 15%; 
   }
-  @keyframes codepen{
-    0%{border-bottom-left-radius:50%}
-    75%{border-bottom-left-radius:15%}
-    100%{border-bottom-left-radius:50%}
-   }
-  
-  #Resume ~ img#tunalogo{
-    transition: border-bottom-right-radius 2s;
-  }
+
   #Resume:hover ~ img#tunalogo{
     border-bottom-right-radius: 15%;
   }
@@ -122,13 +107,9 @@
     width: 20%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: rgba(255, 253, 253, 0.5);
+    background-color: rgba(255, 253, 253, 1);
     transition: background-color 1s;
     opacity: 0%;
-  }
-  
-  #tunaheaderlogo:hover{
-    background-color:rgb(255,255,255, 0.7);
   }
   
   @keyframes intro {
