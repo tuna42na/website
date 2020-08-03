@@ -4,10 +4,9 @@
     text-align: center;
   }
   
-  
 .main {
     background-image: url('./images/rocks\ copy.png');
-    background-size: 45%;
+    background-size: 50%;
     background-color: oldlace;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -18,7 +17,14 @@
     font-size: calc(10px + 2vmin);
     color: white;
   }
-  
+
+@media only screen and (max-width: 700px){
+    div > .main{
+        background-size: cover;
+        background-repeat: repeat-y;
+    }
+  } 
+
   .container{
     width: 85%;
     padding-right: 15px;
@@ -38,6 +44,10 @@
     grid-gap: 50px;
     z-index: 2;
     animation: fadein 5s 1;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .outbound-links-container > div{
