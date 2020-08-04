@@ -30,12 +30,12 @@
   
   .outbound-links-container{
     width: 60%;
-    padding: 30px 30px;
+    padding: 20px 20px;
     text-align: center;
     margin: auto;
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 50px;
+    grid-gap: 20px;
     z-index: 2;
     animation: fadein 5s 1;
     position: fixed;
