@@ -29,7 +29,7 @@
   
   
   .outbound-links-container{
-    width: 60%;
+    width: 400px;
     padding: 20px 20px;
     text-align: center;
     margin: auto;
@@ -162,5 +162,8 @@
     }
     #tunalogo{
         top:0%;
+    }
+    .outbound-links-container{
+      width: 60%;
     }
   } 
