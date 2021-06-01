@@ -1,14 +1,14 @@
-.body {
+body {
   align-items: center;
   text-align: center;
+  margin: 10px;
 }
 
 .main {
   background-image: url("./images/rocks\ copy.png");
-  background-size: 50%;
   background-color: oldlace;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 96.5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,14 +26,6 @@ h3 {
 @font-face {
   font-family: descriptionFont;
   src: url(./fonts/Josefin_Sans/static/JosefinSans-ExtraLight.ttf);
-}
-
-.container {
-  width: 85%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 /* Central Link Container */
